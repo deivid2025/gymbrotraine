@@ -324,7 +324,7 @@ export function DetailSheet({
                   </p>
                   {/* Equipment + stretch tags stay monochrome — they describe
                       the exercise setup, not "what's working". The muscle
-                      chips moved into the new "Músculos activos." section
+                      chips moved into the new "Músculos activos" section
                       where they sit next to the body map. */}
                   <ul
                     className="tag-list"
@@ -387,13 +387,11 @@ export function DetailSheet({
               >
                 <div className="section-heading">
                   <div>
-                    <p className="eyebrow">Dónde trabaja</p>
-                    <h2 id="muscles-title">Músculos activos.</h2>
+                    <p className="eyebrow">Zona de activación</p>
+                    <h2 id="muscles-title">Músculos activos</h2>
                   </div>
                   <p>
-                    Toca un músculo para resaltarlo en el cuerpo. El músculo
-                    principal aparece en rojo intenso; los secundarios, en rojo
-                    suave.
+                    Selecciona un grupo muscular para visualizar su zona de activación. El músculo principal se muestra en rojo intenso; los secundarios en rojo suave.
                   </p>
                 </div>
 
@@ -405,7 +403,7 @@ export function DetailSheet({
                   />
 
                   <div className="muscle-map-chips">
-                    <p className="muscle-eyebrow">Toca para resaltar</p>
+                    <p className="muscle-eyebrow">Seleccionar</p>
                     <ul className="tag-list" aria-label="Músculos activos">
                       <motion.li
                         className="muscle-tag muscle-tag-primary"
@@ -481,12 +479,11 @@ export function DetailSheet({
               <section className="section" aria-labelledby="frames-title">
                 <div className="section-heading">
                   <div>
-                    <p className="eyebrow">SVG transparente · 512 × 512</p>
-                    <h2 id="frames-title">Las tres ilustraciones.</h2>
+                    <p className="eyebrow">Inicio · Medio · Fin</p>
+                    <h2 id="frames-title">Fases del movimiento</h2>
                   </div>
                   <p>
-                    Úsalas como secuencia o elige la pose que mejor se adapte
-                    a tu interfaz.
+                    Visualiza el movimiento en sus tres fases o navega a la posición que necesites.
                   </p>
                 </div>
                 <div className="frame-grid">
@@ -555,8 +552,8 @@ export function DetailSheet({
                 aria-labelledby="details-title"
               >
                 <div>
-                  <p className="eyebrow">Ficha del catálogo</p>
-                  <h2 id="details-title">Detalles del ejercicio.</h2>
+                  <p className="eyebrow">Datos del ejercicio</p>
+                  <h2 id="details-title">Ficha técnica</h2>
                 </div>
                 <dl className="metadata-grid">
                   <div className="metadata-card">
@@ -616,10 +613,10 @@ export function DetailSheet({
               >
                 <div>
                   <p className="eyebrow">Prescripción</p>
-                  <h2 id="prescription-title">Cómo entrenarlo.</h2>
+                  <h2 id="prescription-title">Cómo entrenarlo</h2>
                   <p>
-                    Recomendaciones basadas en ACSM y meta-análisis de
-                    Schoenfeld. Elige tu objetivo:
+                    Series, repeticiones y descanso según evidencia científica.
+                    Selecciona tu objetivo:
                   </p>
                 </div>
 
@@ -705,11 +702,11 @@ export function DetailSheet({
                   aria-labelledby="volume-title"
                 >
                   <div>
-                    <p className="eyebrow">Frecuencia</p>
-                    <h2 id="volume-title">Volumen semanal.</h2>
+                    <p className="eyebrow">Volumen</p>
+                    <h2 id="volume-title">Volumen semanal</h2>
                     <p>
-                      Cuántas series por semana recomienda la ciencia para
-                      este músculo.
+                      Series recomendadas por semana según evidencia científica.
+                       
                     </p>
                   </div>
 
@@ -759,7 +756,7 @@ export function DetailSheet({
                   >
                     <div>
                       <p className="eyebrow">Cardio</p>
-                      <h2 id="met-title">Intensidad y calorías.</h2>
+                      <h2 id="met-title">Intensidad y calorías</h2>
                       <p>
                         Basado en el Compendio de Actividades Físicas
                         (Ainsworth 2011).
